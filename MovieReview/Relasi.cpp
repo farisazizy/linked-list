@@ -25,6 +25,12 @@ void deleteAfter(address_relasi Prec, address_relasi &P){
 
 address_relasi alokasi( address_parent P, address_child C){
 
+    address_relasi Q = new elmlist_relasi;
+    child(Q) = C;
+    parent(Q) = P;
+    next(Q) = NULL;
+    prev(Q) = NULL;
+    return Q;
 }
 void dealokasi(address_relasi &P){
 

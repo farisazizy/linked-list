@@ -15,12 +15,12 @@ using namespace std;
 struct infotype_child{
     string reviewer;
 };
+
 typedef struct elmlist_child *address_child;
 
 struct elmlist_child{
     infotype_child info;
     address_child next;
-    address_child prev;
 };
 
 struct List_child{
