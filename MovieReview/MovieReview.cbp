@@ -32,8 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="MovieReview.cpp" />
-		<Unit filename="MovieReview.h" />
+		<Unit filename="Child.cpp" />
+		<Unit filename="Child.h" />
+		<Unit filename="Parents.cpp" />
+		<Unit filename="Parents.h" />
+		<Unit filename="Relasi.cpp" />
+		<Unit filename="Relasi.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
