@@ -8,9 +8,9 @@ multi-linked list bentuk III digunakan untuk merepresentasikan dan menjamin hubu
 ## I. DESKRIPSI TOPIK
 Program untuk mengelola data ulasan film.
 
-Parent 1: Movie;
+Parent: Movie;
 
-Parent 2: Reviewer;
+Child: Reviewer;
 
 Relasi: Ulasan;
 
