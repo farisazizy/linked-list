@@ -1,5 +1,9 @@
 # Tugas Besar Struktur Data
 Tugas besar Struktur Data: Movie Review untuk menunjang eksistensi atas validasi
+<br>
+
+![03](https://user-images.githubusercontent.com/13241336/36650941-b240fd3c-1ad8-11e8-98ac-3b67ff175467.png)<br>
+multi-linked list bentuk III digunakan untuk merepresentasikan dan menjamin hubungan m-n<br>
 
 ## I. DESKRIPSI TOPIK
 Program untuk mengelola data ulasan film.
