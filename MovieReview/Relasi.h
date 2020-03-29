@@ -2,6 +2,9 @@
 #define RELASI_H_INCLUDED
 
 #include <iostream>
+#include "Parents.h"
+#include "Child.h"
+
 using namespace std;
 
 #define next(P) P->next

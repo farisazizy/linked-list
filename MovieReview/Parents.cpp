@@ -63,13 +63,11 @@ void deleteAfter(List_parent &L, address_parent Prec, address_parent &P){
     }
 }
 
-address_parent alokasi(infotype_parent x){
+void alokasi(address_parent &P, infotype_parent x){
 
-    address_parent P;
     P = new elmlist_parent;
     info(P) = x;
     next(P) = NULL;
-    return P;
 
 }
 

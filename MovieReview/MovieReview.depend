@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1585481184 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\main.cpp
+	"iostream"
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+
+1585482883 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\parents.h
+	<iostream>
+
+1585481970 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\relasi.h
+	<iostream>
+	"Parents.h"
+	"Child.h"
+
+1585482903 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\child.h
+	<iostream>
+
+1585481454 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\relasi.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+
+1585482858 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\child.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+
+1585482314 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\parents.cpp
+	"Parents.h"
+

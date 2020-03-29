@@ -5,14 +5,13 @@ using namespace std;
 
 #define first(L) L.first
 #define next(P) P->next
+#define last(L) L.last
 #define info(P) P->info
 
 // first last
 
 
-struct infotype_parent{
-    string movie;
-};
+typedef string infotype_parent;
 
 typedef struct elmlist_parent *address_parent;
 
@@ -35,7 +34,7 @@ void deleteFirst(List_parent &L, address_parent &P);
 void deleteLast(List_parent &L, address_parent &P);
 void deleteAfter(List_parent &L, address_parent Prec, address_parent &P);
 
-address_parent alokasi(infotype_parent x);
+void alokasi(address_parent &P, infotype_parent x);
 void dealokasi(address_parent &P);
 address_parent findElm(List_parent L, infotype_parent x);
 void printInfo(List_parent L);

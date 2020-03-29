@@ -1,3 +1,5 @@
+#include "Parents.h"
+#include "Relasi.h"
 #include "Child.h"
 
 void createList(List_child &L){
@@ -43,7 +45,7 @@ void deleteFirst(List_child &L, address_child &P){
 
 void deleteLast(List_child &L, address_child &P){
 
-    address_parent Q = first(L);
+    address_child Q = first(L);
     if(first(L) != NULL){
         P = last(L);
         while(next(Q) != last(L)){
@@ -54,7 +56,7 @@ void deleteLast(List_child &L, address_child &P){
     }
 }
 
-void deleteAfter(address_child Prec, address_child &P){
+void deleteAfter(List_child &L, address_child Prec, address_child &P){
 
     P = next(Prec);
     if(P == last(L)){
@@ -65,18 +67,17 @@ void deleteAfter(address_child Prec, address_child &P){
     }
 }
 
-address_child alokasi(infotype_child x){
+void alokasi(address_child &P, infotype_child x){
 
-    address_child P;
     P = new elmlist_child;
     info(P) = x;
     next(P) = NULL;
-    return P;
 }
 
 void dealokasi(address_child &P){
 
 }
+
 
 address_child findElm(List_child L, infotype_child x){
 
@@ -93,7 +94,7 @@ address_child findElm(List_child L, infotype_child x){
 void printInfo(List_child L){
 
     address_child P = first(L);
-    while(P !=NULL) {
+    while(P != NULL) {
         cout<<" "<<info(P);
         P = next(P);
     }
