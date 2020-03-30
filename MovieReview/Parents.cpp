@@ -1,21 +1,11 @@
 #include "Parents.h"
 
-void createList(List_parent &L){
+void createListP(List_parent &L){
 
     first(L) = NULL;
 }
-void insertFirst(List_parent &L, address_parent P){
 
-    if(first(L) == NULL) {
-        first(L) = P;
-        last(L) = P;
-    } else {
-        next(P) = first(L);
-        first(L) = P;
-    }
-
-}
-void insertLast(List_parent &L, address_parent P){
+void insertLastP(List_parent &L, address_parent P){
 
     if(first(L) == NULL) {
         first(L) = P;
@@ -26,13 +16,26 @@ void insertLast(List_parent &L, address_parent P){
     }
 }
 
-void insertAfter(List_parent &L, address_parent Prec, address_parent P){
+void insertFirstP(List_parent &L, address_parent P){
+
+    if(first(L) == NULL) {
+        first(L) = P;
+        last(L) = P;
+    } else {
+        next(P) = first(L);
+        first(L) = P;
+    }
+
+}
+
+void insertAfterP(List_parent &L, address_parent Prec, address_parent P){
 
     next(P) = next(Prec);
     next(Prec) = P;
 }
 
-void deleteFirst(List_parent &L, address_parent &P){
+
+void deleteFirstP(List_parent &L, address_parent &P){
 
     if(first(L) != NULL){
         P = first(L);
@@ -40,7 +43,7 @@ void deleteFirst(List_parent &L, address_parent &P){
         next(P) = NULL;
     }
 }
-void deleteLast(List_parent &L, address_parent &P){
+void deleteLastP(List_parent &L, address_parent &P){
 
     address_parent Q = first(L);
     if(first(L) != NULL){
@@ -52,18 +55,18 @@ void deleteLast(List_parent &L, address_parent &P){
         next(last(L)) = NULL;
     }
 }
-void deleteAfter(List_parent &L, address_parent Prec, address_parent &P){
+void deleteAfterP(List_parent &L, address_parent Prec, address_parent &P){
 
     P = next(Prec);
     if(P == last(L)){
-        deleteLast(L, P);
+        deleteLastP(L, P);
     } else {
         next(Prec) = next(P);
         next(P) = NULL;
     }
 }
 
-void alokasi(address_parent &P, infotype_parent x){
+void alokasiP(address_parent &P, infotype_parent x){
 
     P = new elmlist_parent;
     info(P) = x;
@@ -71,11 +74,11 @@ void alokasi(address_parent &P, infotype_parent x){
 
 }
 
-void dealokasi(address_parent &P){
+void dealokasiP(address_parent &P){
 
 }
 
-address_parent findElm(List_parent L, infotype_parent x){
+address_parent findElmP(List_parent L, infotype_parent x){
 
     address_parent P = first(L);
     do {
@@ -87,7 +90,7 @@ address_parent findElm(List_parent L, infotype_parent x){
     return NULL;
 
 }
-void printInfo(List_parent L){
+void printInfoP(List_parent L){
 
     address_parent P = first(L);
     if(first(L)!=NULL) {

@@ -17,8 +17,34 @@ int main()
     address_parent P;
     address_relasi R;
 
-    createList(LP);
-    createList(LC);
-    createList(LR);
+    createListP(LP);
+    createListC(LC);
+    createListR(LR);
+
+    infotype_child c = "Aditya";
+    infotype_parent p = "Hawaii Five-0";
+    infotype_relasi r = "Police Procedural yang membuat penontonnya merasa seperti berada di dalam film.";
+
+    alokasiC(C, c);
+    alokasiP(P, p);
+    R = alokasiR(P, C, r);
+
+    insertLastP(LP, P);
+    insertFirstR(LR, R);
+    insertFirstC(LC, C);
+
+    c = "Farishadi";
+    p = "Dora The Explorer";
+    r = "Film yang tepat untuk dinikmati saat Work From Home.";
+
+    alokasiC(C, c);
+    alokasiP(P, p);
+    R = alokasiR(P, C, r);
+
+    insertLastP(LP, P);
+    insertFirstR(LR, R);
+    insertFirstC(LC, C);
+
+    printInfoR(LR);
 
 }

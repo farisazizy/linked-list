@@ -2,11 +2,11 @@
 #include "Relasi.h"
 #include "Child.h"
 
-void createList(List_child &L){
+void createListC(List_child &L){
 
     first(L) = NULL;
 }
-void insertFirst(List_child &L, address_child P){
+void insertFirstC(List_child &L, address_child P){
 
     if(first(L) == NULL) {
         last(L) = P;
@@ -17,7 +17,7 @@ void insertFirst(List_child &L, address_child P){
     }
 }
 
-void insertLast(List_child &L, address_child P){
+void insertLastC(List_child &L, address_child P){
 
     if(first(L) == NULL) {
         first(L) = P;
@@ -28,13 +28,13 @@ void insertLast(List_child &L, address_child P){
     }
 }
 
-void insertAfter(address_child Prec, address_child P){
+void insertAfterC(address_child Prec, address_child P){
 
     next(P) = next(Prec);
     next(Prec) = P;
 }
 
-void deleteFirst(List_child &L, address_child &P){
+void deleteFirstC(List_child &L, address_child &P){
 
     if(first(L) != NULL){
         P = first(L);
@@ -43,7 +43,7 @@ void deleteFirst(List_child &L, address_child &P){
     }
 }
 
-void deleteLast(List_child &L, address_child &P){
+void deleteLastC(List_child &L, address_child &P){
 
     address_child Q = first(L);
     if(first(L) != NULL){
@@ -56,30 +56,30 @@ void deleteLast(List_child &L, address_child &P){
     }
 }
 
-void deleteAfter(List_child &L, address_child Prec, address_child &P){
+void deleteAfterC(List_child &L, address_child Prec, address_child &P){
 
     P = next(Prec);
     if(P == last(L)){
-        deleteLast(L, P);
+        deleteLastC(L, P);
     } else {
         next(Prec) = next(P);
         next(P) = NULL;
     }
 }
 
-void alokasi(address_child &P, infotype_child x){
+void alokasiC(address_child &P, infotype_child x){
 
     P = new elmlist_child;
     info(P) = x;
     next(P) = NULL;
 }
 
-void dealokasi(address_child &P){
+void dealokasiC(address_child &P){
 
 }
 
 
-address_child findElm(List_child L, infotype_child x){
+address_child findElmC(List_child L, infotype_child x){
 
     address_child P = first(L);
     do {
@@ -91,7 +91,7 @@ address_child findElm(List_child L, infotype_child x){
     return NULL;
 }
 
-void printInfo(List_child L){
+void printInfoC(List_child L){
 
     address_child P = first(L);
     while(P != NULL) {

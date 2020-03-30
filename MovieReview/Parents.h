@@ -26,17 +26,17 @@ struct List_parent {
 };
 
 
-void createList(List_parent &L);
-void insertFirst(List_parent &L, address_parent P);
-void insertAfter(List_parent &L, address_parent Prec, address_parent P);
-void insertLast(List_parent &L, address_parent P);
-void deleteFirst(List_parent &L, address_parent &P);
-void deleteLast(List_parent &L, address_parent &P);
-void deleteAfter(List_parent &L, address_parent Prec, address_parent &P);
+void createListP(List_parent &L);
+void insertFirstP(List_parent &L, address_parent P);
+void insertAfterP(List_parent &L, address_parent Prec, address_parent P);
+void insertLastP(List_parent &L, address_parent P);
+void deleteFirstP(List_parent &L, address_parent &P);
+void deleteLastP(List_parent &L, address_parent &P);
+void deleteAfterP(List_parent &L, address_parent Prec, address_parent &P);
 
-void alokasi(address_parent &P, infotype_parent x);
-void dealokasi(address_parent &P);
-address_parent findElm(List_parent L, infotype_parent x);
-void printInfo(List_parent L);
+void alokasiP(address_parent &P, infotype_parent x);
+void dealokasiP(address_parent &P);
+address_parent findElmP(List_parent L, infotype_parent x);
+void printInfoP(List_parent L);
 
 #endif // PARENTS_H_INCLUDED
