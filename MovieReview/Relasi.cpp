@@ -60,18 +60,18 @@ void printInfoR(List_relasi L){
     if (first(L) == NULL) {
         cout<<"List Kosong"<<endl;
         } else {
+            cout<<endl;
             cout<<"Film Title: "<<info(parent(first(L)))<<endl;
             cout<<"Reviewer: "<<info(child(first(L)))<<endl;
             cout<<"Review: "<<info(first(L))<<endl;
             address_relasi curr = next(first(L));
-            cout<<endl;
+
             while (curr !=first(L)) {
+                cout<<endl;
                 cout<<"Film Title: "<<info(parent(curr))<<endl;
                 cout<<"Reviewer: "<<info(child(curr))<<endl;
                 cout<<"Review: "<<info(curr)<<endl;
-                cout<<info(curr)<<" ";
                 curr = next(curr);
-                cout<<endl;
             }
         cout<<endl;
     }

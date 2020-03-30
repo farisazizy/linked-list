@@ -27,6 +27,7 @@ struct List_child{
 };
 
 void createListC(List_child &L);
+void insertAscendingC(List_child &L, address_child P);
 void insertFirstC(List_child &L, address_child P);
 void insertLastC(List_child &L, address_child P);
 void insertAfterC(address_child Prec, address_child P);

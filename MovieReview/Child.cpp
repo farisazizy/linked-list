@@ -6,6 +6,26 @@ void createListC(List_child &L){
 
     first(L) = NULL;
 }
+
+void insertAscendingC(List_child &L, address_child P) {
+    string X = info(P);
+    if (first(L) == NULL) {
+        insertFirstC(L, P);
+    } else {
+        if (X <= info(first(L))) {
+            insertFirstC(L, P);
+        } else if (X >= info(last(L))) {
+            insertLastC(L, P);
+        } else {
+            address_child curr = first(L);
+            while (info(next(curr)) <= X) {
+                curr = next(curr);
+            }
+            insertAfterC(curr, P);
+        }
+    }
+}
+
 void insertFirstC(List_child &L, address_child P){
 
     if(first(L) == NULL) {

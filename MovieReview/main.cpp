@@ -31,7 +31,7 @@ int main()
 
     insertLastP(LP, P);
     insertFirstR(LR, R);
-    insertFirstC(LC, C);
+    insertAscendingC(LC, C);
 
     c = "Farishadi";
     p = "Dora The Explorer";
@@ -43,8 +43,21 @@ int main()
 
     insertLastP(LP, P);
     insertFirstR(LR, R);
-    insertFirstC(LC, C);
+    insertAscendingC(LC, C);
+
+
+
+    c = "Irfan";
+    p = "Barbie";
+    r = "Saya merasa tenang menonton film ini.";
+
+    alokasiC(C, c);
+    alokasiP(P, p);
+    R = alokasiR(P, C, r);
+
+    insertLastP(LP, P);
+    insertFirstR(LR, R);
+    insertAscendingC(LC, C);
 
     printInfoR(LR);
-
 }
