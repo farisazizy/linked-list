@@ -154,6 +154,35 @@ void printInfoR(List_relasi L){
         cout<<endl;
     }
 }
+
+
+void printByChild (List_relasi L, address_child P) {
+    int i = 0;
+    address_relasi curr = first(L);
+
+    if (curr != NULL) {
+        if (child(curr) == P) {
+            cout<<"Film Title: "<<info(parent(curr))<<endl;
+            cout<<"Reviewer: "<<info(child(curr))<<endl;
+            cout<<"Review: "<<info(curr)<<endl;
+            i++;
+        }
+        curr = next(curr);
+    }
+
+    while (curr != first(L)) {
+            if (child(curr) == P) {
+                cout<<"Film Title: "<<info(parent(curr))<<endl;
+                cout<<"Reviewer: "<<info(child(curr))<<endl;
+                cout<<"Review: "<<info(curr)<<endl;
+                i++;
+            }
+    }
+    if (i == 0) {
+        cout<<"Sorry, You don't have any reviews yet."<<endl;
+    }
+}
+
 /*
 - createList
 - createNewElm

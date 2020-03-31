@@ -178,11 +178,11 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
                     deleteReview(LR, R);
                     cout<<"Delete successful."<<endl;
                 }
-                
+
             }
 
         } else if (pilmenu == 3) { //showallofmyreview
-
+            printByChild (LR, C);
         } else if (pilmenu == 4) { //shownotreviewed
 
         } else if (pilmenu == 5) { //updatereview

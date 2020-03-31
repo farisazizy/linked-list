@@ -74,3 +74,48 @@
 	"Child.h"
 	"controller.h"
 
+1585623858 source:c:\users\asus\desktop\moviereview\child.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 c:\users\asus\desktop\moviereview\parents.h
+	<iostream>
+
+1585681410 c:\users\asus\desktop\moviereview\relasi.h
+	<iostream>
+	"Parents.h"
+	"Child.h"
+
+1585623858 c:\users\asus\desktop\moviereview\child.h
+	<iostream>
+
+1585623858 c:\users\asus\desktop\moviereview\controller.h
+	<iostream>
+
+1585681463 source:c:\users\asus\desktop\moviereview\controller.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 source:c:\users\asus\desktop\moviereview\main.cpp
+	"iostream"
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 source:c:\users\asus\desktop\moviereview\parents.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585681392 source:c:\users\asus\desktop\moviereview\relasi.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+

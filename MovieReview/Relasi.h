@@ -45,5 +45,6 @@ void dealokasiR(address_relasi &P);
 address_relasi findElmR(List_relasi L, address_parent P, address_child C);
 //address_relasi findElmR2(List_relasi L, infotype_child X);
 void printInfoR(List_relasi L);
+void printByChild (List_relasi L, address_child P);
 
 #endif // RELASI_H_INCLUDED
