@@ -102,22 +102,31 @@ void dealokasiC(address_child &P){
 
 address_child findElmC(List_child L, infotype_child x){
 
-    address_child P = first(L);
-    do {
-        if(info(P) == x) {
-            return P;
-        }
-        P = next(P);
-    } while(P != first(L));
-    return NULL;
+    address_child curr = first(L);
+    while (curr != NULL && info(curr) != x) {
+        curr = next(curr);
+    }
+    if (curr != NULL) {
+        return curr;
+    } else {
+        return NULL;
+    }
+
 }
 
 void printInfoC(List_child L){
 
     address_child P = first(L);
-    while(P != NULL) {
-        cout<<" "<<info(P);
-        P = next(P);
+    int i = 1;
+    if(first(L)!=NULL) {
+        cout<< "Reviewer List: "<<endl;
+        do {
+            cout<<i<<". "<<info(P)<<endl;
+            P = next(P);
+            i++;
+        } while((P) != NULL);
+    }else {
+        cout<<"Reviewer list is still empty."<<endl;
     }
 
     cout<<endl;

@@ -33,6 +33,7 @@ void insertLastP(List_parent &L, address_parent P);
 void deleteFirstP(List_parent &L, address_parent &P);
 void deleteLastP(List_parent &L, address_parent &P);
 void deleteAfterP(List_parent &L, address_parent Prec, address_parent &P);
+void deleteFilm(List_parent &L, address_parent P);
 
 void alokasiP(address_parent &P, infotype_parent x);
 void dealokasiP(address_parent &P);

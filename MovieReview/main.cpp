@@ -21,6 +21,14 @@ int main()
     createListC(LC);
     createListR(LR);
 
+    //test purpose only
+    infotype_child c = "Aditya";
+    alokasiC(C, c);
+    insertAscendingC(LC, C);
+    c = "Faris";
+    alokasiC(C, c);
+    insertAscendingC(LC, C);
+
     int pilmenu = 0;
     string ans;
 
@@ -38,7 +46,7 @@ int main()
             cout<<endl<<"Menu: "<<endl;
             cout<<"1. Login Admin"<<endl;
             cout<<"2. Login Reviewer"<<endl;
-            cout<<"3. Quit"<<endl;
+            cout<<"3. Back"<<endl;
             cout<<"Menu: ";
             cin>>pilmenu;
             if (pilmenu == 1) {
@@ -49,13 +57,23 @@ int main()
                 cout<<"Password: ";
                 cin>>pass;
                 if ((id == "admin") && (pass == "admin")) {
-                    cout<<endl<<"Anda berhasil login sebagai admin.";
+                    cout<<endl<<"You have logged in as admin.";
                     admin(LP,LC,LR);
                 } else {
-                    cout << "Username atau password salah.";
+                    cout << "Username or Password is wrong.";
                 }
             } else if (pilmenu == 2) {
-
+                string id;
+                cout<<endl;
+                cout<<"Reviewer Name: ";
+                cin>>id;
+                C = findElmC(LC, id);
+                if (C == NULL) {
+                    cout<<"You name isn't registered. Please sign up first."<<endl;
+                } else {
+                    cout<<"You have logged in as "<<info(C)<<endl;
+                    reviewer(LP, LC, LR, C);
+                }
             } else if (pilmenu == 3) {
 
             } else {

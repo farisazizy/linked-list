@@ -62,6 +62,7 @@ void printInfoR(List_relasi L){
         cout<<"List Kosong"<<endl;
         } else {
             cout<<endl;
+            cout<< "Review List: "<<endl<<endl;
             cout<<"Film Title: "<<info(parent(first(L)))<<endl;
             cout<<"Reviewer: "<<info(child(first(L)))<<endl;
             cout<<"Review: "<<info(first(L))<<endl;
