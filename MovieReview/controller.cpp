@@ -110,9 +110,15 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
                 cout<<"Delete successful."<<endl;
             }
         } else if (pilmenu == 7) { //view all review of specific film
-
+            cout<<endl<<"Film Title: ";
+            cin>>input;
+            address_parent P = findElmP(LP, input);
+            printByParent(LR, P); 
         } else if (pilmenu == 8) { //view all review of specific reviewer
-
+            cout<<endl<<"Reviewer Name: ";
+            cin>>input;
+            address_child C = findElmC(LC, input);
+            printByChild(LR, C); 
         } else {
             cout<<"Tidak ada pilihan dalam menu."<<endl;
         }

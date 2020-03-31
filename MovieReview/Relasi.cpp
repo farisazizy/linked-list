@@ -164,7 +164,7 @@ void printByChild (List_relasi L, address_child P) {
         if (child(curr) == P) {
             cout<<"Film Title: "<<info(parent(curr))<<endl;
             cout<<"Reviewer: "<<info(child(curr))<<endl;
-            cout<<"Review: "<<info(curr)<<endl;
+            cout<<"Review: "<<info(curr)<<endl<<endl;;
             i++;
         }
         curr = next(curr);
@@ -174,12 +174,41 @@ void printByChild (List_relasi L, address_child P) {
             if (child(curr) == P) {
                 cout<<"Film Title: "<<info(parent(curr))<<endl;
                 cout<<"Reviewer: "<<info(child(curr))<<endl;
-                cout<<"Review: "<<info(curr)<<endl;
+                cout<<"Review: "<<info(curr)<<endl<<endl;
                 i++;
             }
+            curr = next(curr);
     }
     if (i == 0) {
-        cout<<"Sorry, You don't have any reviews yet."<<endl;
+        cout<<"No reviews yet."<<endl;
+    }
+}
+
+void printByParent (List_relasi L, address_parent P) {
+    int i = 0;
+    address_relasi curr = first(L);
+
+    if (curr != NULL) {
+        if (parent(curr) == P) {
+            cout<<"Film Title: "<<info(parent(curr))<<endl;
+            cout<<"Reviewer: "<<info(child(curr))<<endl;
+            cout<<"Review: "<<info(curr)<<endl<<endl;
+            i++;
+        }
+        curr = next(curr);
+    }
+
+    while (curr != first(L)) {
+            if (parent(curr) == P) {
+                cout<<"Film Title: "<<info(parent(curr))<<endl;
+                cout<<"Reviewer: "<<info(child(curr))<<endl;
+                cout<<"Review: "<<info(curr)<<endl<<endl;
+                i++;
+            }
+            curr = next(curr);
+    }
+    if (i == 0) {
+        cout<<"Film doesn't exist or no reviews yet."<<endl;
     }
 }
 
