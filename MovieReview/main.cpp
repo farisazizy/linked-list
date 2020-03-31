@@ -2,12 +2,12 @@
 #include "Parents.h"
 #include "Relasi.h"
 #include "Child.h"
+#include "controller.h"
 
 using namespace std;
 
 int main()
 {
-
     cout << "Bentuk III - Movie Review" << endl;
 
     List_parent LP;
@@ -21,7 +21,80 @@ int main()
     createListC(LC);
     createListR(LR);
 
-    infotype_child c = "Aditya";
+    int pilmenu = 0;
+    string ans;
+
+    menu();
+    cin>>pilmenu;
+
+    while (pilmenu < 1 || pilmenu > 4) {
+        cout<<"\nMaaf, tidak ada pilihan dalam menu\n"<<endl;
+        menu();
+        cin>>pilmenu;
+    }
+
+    while (pilmenu != 4) {
+        if (pilmenu == 1) { // Login
+            cout<<endl<<"Menu: "<<endl;
+            cout<<"1. Login Admin"<<endl;
+            cout<<"2. Login Reviewer"<<endl;
+            cout<<"3. Quit"<<endl;
+            cout<<"Menu: ";
+            cin>>pilmenu;
+            if (pilmenu == 1) {
+                string id, pass;
+                cout<<endl;
+                cout<<"Username: ";
+                cin>>id;
+                cout<<"Password: ";
+                cin>>pass;
+                if ((id == "admin") && (pass == "admin")) {
+                    cout<<endl<<"Anda berhasil login sebagai admin.";
+                    admin();
+                } else {
+                    cout << "Username atau password salah.";
+                }
+            } else if (pilmenu == 2) {
+
+            } else if (pilmenu == 3) {
+
+            } else {
+                cout<<"Tidak ada pilihan dalam menu."<<endl;
+            }
+
+
+        } else if (pilmenu == 2) {
+
+        } else if (pilmenu == 3) {
+
+        }
+
+        cout<<endl<<"Quit from the Application?(Y/N): ";
+        cin>>ans;
+        if (ans == "Y" || ans == "y") {
+            pilmenu = 4;
+        } else {
+            menu();
+            pilmenu = 0;
+            cin>>pilmenu;
+            while (pilmenu < 1 || pilmenu > 4) {
+                cout<<"\nMaaf, tidak ada pilihan dalam menu\n"<<endl;
+                menu();
+                cin>>pilmenu;
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+    /*infotype_child c = "Aditya";
     infotype_parent p = "Hawaii Five-0";
     infotype_relasi r = "Police Procedural yang membuat penontonnya merasa seperti berada di dalam film.";
 
@@ -59,5 +132,5 @@ int main()
     insertFirstR(LR, R);
     insertAscendingC(LC, C);
 
-    printInfoR(LR);
+    printInfoR(LR);*/
 }

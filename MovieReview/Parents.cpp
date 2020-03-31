@@ -1,4 +1,7 @@
 #include "Parents.h"
+#include "Relasi.h"
+#include "Child.h"
+#include "controller.h"
 
 void createListP(List_parent &L){
 
