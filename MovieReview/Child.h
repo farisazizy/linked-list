@@ -34,6 +34,7 @@ void insertAfterC(address_child Prec, address_child P);
 void deleteFirstC(List_child &L, address_child &P);
 void deleteLastC(List_child &L, address_child &P);
 void deleteAfterC(List_child &L, address_child Prec, address_child &P);
+void deleteReviewer(List_child &L, address_child P);
 
 void alokasiC(address_child &P, infotype_child x);
 void dealokasiC(address_child &P);

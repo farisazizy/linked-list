@@ -83,8 +83,21 @@ int main()
 
         } else if (pilmenu == 2) {
 
-        } else if (pilmenu == 3) {
+            string input;
+            cout<<endl<<"Insert your name: ";
+            cin>>input;
+            if (findElmC(LC, input) != NULL) {
+                cout<<"Sorry, your account already exist."<<endl;
+            } else {
+                address_child C;
+                alokasiC(C, input);
+                insertAscendingC(LC, C);
+            }
 
+        } else if (pilmenu == 3) { // harus diubah, ini hanya untuk test
+            printInfoP(LP);
+            printInfoC(LC);
+            printInfoR(LR);
         }
 
         cout<<endl<<"Quit from the Application?(Y/N): ";

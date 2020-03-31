@@ -122,6 +122,7 @@ void printInfoP(List_parent L){
     } else {
         cout<<"Film list is still empty."<<endl;
     }
+    cout<<endl;
 
 }
 

@@ -37,10 +37,13 @@ void insertAfterR(address_relasi Prec, address_relasi P);
 void deleteFirstR(List_relasi &L, address_relasi &P);
 void deleteLastR(List_relasi &L, address_relasi &P);
 void deleteAfterR(address_relasi Prec, address_relasi &P);
+void deleteReview(List_relasi &L, address_relasi P);
+
 
 address_relasi alokasiR( address_parent P, address_child C, infotype_child X);
 void dealokasiR(address_relasi &P);
 address_relasi findElmR(List_relasi L, address_parent P, address_child C);
+//address_relasi findElmR2(List_relasi L, infotype_child X);
 void printInfoR(List_relasi L);
 
 #endif // RELASI_H_INCLUDED

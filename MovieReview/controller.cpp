@@ -7,7 +7,7 @@ void menu() {
     cout<<endl;
     cout<<"Menu: "<<endl;
     cout<<"1. Login "<<endl;
-    cout<<"2. Sign Up"<<endl;
+    cout<<"2. Sign Up Reviewer"<<endl;
     cout<<"3. View Only"<<endl;
     cout<<"4. Quit"<<endl;
     cout<<"Menu: ";
@@ -98,9 +98,17 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             }
 
         } else if (pilmenu == 5) { //viewreviewer
-
+            printInfoC(LC);
         } else if (pilmenu == 6) { //deletereviewer
-
+            cout<<endl<<"Reviewer to delete: ";
+            cin>>input;
+            address_child P = findElmC(LC, input);
+            if (P == NULL) {
+                cout<<"Sorry, reviewer doesn't exist."<<endl;
+            } else {
+                deleteReviewer(LC, P);
+                cout<<"Delete successful."<<endl;
+            }
         } else if (pilmenu == 7) { //view all review of specific film
 
         } else if (pilmenu == 8) { //view all review of specific reviewer
@@ -117,7 +125,7 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
 
 }
 
-void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child P) {
+void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C) {
     int pilmenu;
     string input;
 
@@ -132,8 +140,46 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child P
 
     while (pilmenu != 6) {
         if (pilmenu == 1) { //addreview
-            
+            cout<<endl<<"Film Title to input the review: ";
+            cin>>input;
+            address_parent P = findElmP(LP, input);
+
+            if (P != NULL){
+                address_relasi check = findElmR(LR, P, C);
+                if (check != NULL) {
+                    cout<<"Sorry, You already gave a review."<<endl;
+                } else {
+                    string review;
+                    cout<<endl<<"Input your review: ";
+                    cin>>review;
+
+                    address_relasi R = alokasiR(P, C, review);
+
+                    insertFirstR(LR, R);
+                }
+
+            } else {
+                cout<<"Sorry, film doesn't exist."<<endl;
+            }
+
         } else if (pilmenu == 2) { //deletereview
+
+            cout<<endl<<"Review's film title to delete: ";
+            cin>>input;
+            address_parent P = findElmP(LP, input);
+
+            if (P == NULL) {
+                cout<<"Sorry, film doesn't exist."<<endl;
+            } else {
+                address_relasi R = findElmR(LR, P, C);
+                if (R == NULL) {
+                    cout<<"Sorry, you don't have any review for this film."<<endl;
+                } else {
+                    deleteReview(LR, R);
+                    cout<<"Delete successful."<<endl;
+                }
+                
+            }
 
         } else if (pilmenu == 3) { //showallofmyreview
 

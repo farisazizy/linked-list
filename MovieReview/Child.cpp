@@ -88,6 +88,22 @@ void deleteAfterC(List_child &L, address_child Prec, address_child &P){
     }
 }
 
+void deleteReviewer(List_child &L, address_child P) {
+
+    if (P == first(L)) {
+        deleteFirstC(L, P);
+    } else if (P == last(L)) {
+        deleteLastC(L, P);
+    } else {
+        address_child curr = first(L);
+        while (next(curr) != P) {
+            curr = next(curr);
+        }
+        deleteAfterC(L, curr, P);
+    }
+    dealokasiC(P);
+}
+
 void alokasiC(address_child &P, infotype_child x){
 
     P = new elmlist_child;
@@ -96,7 +112,7 @@ void alokasiC(address_child &P, infotype_child x){
 }
 
 void dealokasiC(address_child &P){
-
+    //isi ya
 }
 
 
@@ -128,7 +144,6 @@ void printInfoC(List_child L){
     }else {
         cout<<"Reviewer list is still empty."<<endl;
     }
-
     cout<<endl;
 }
 

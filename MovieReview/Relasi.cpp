@@ -32,19 +32,56 @@ void insertAfterR(address_relasi Prec, address_relasi P){
 
 }
 void deleteFirstR(List_relasi &L, address_relasi &P){
-
+    if (next(first(L)) != first(L)) {
+        P = first(L);
+        address_relasi last = prev(first(L));
+        next(last) = next(P);
+        prev(next(P)) = last;
+        prev(P) = NULL;
+        first(L) = next(P);
+        next(P) = NULL;
+    } else {
+        next(P) = NULL;
+        prev(P) = NULL;
+        first(L) = NULL;
+    }
 }
+
 void deleteLastR(List_relasi &L, address_relasi &P){
-
+    address_relasi last = prev(first(L));
+    prev(first(L)) = prev(last);
+    next(prev(last)) = first(L);
+    prev(last) = NULL;
+    next(last) = NULL;
 }
-void deleteAfterR(address_relasi Prec, address_relasi &P){
 
+void deleteAfterR(address_relasi Prec, address_relasi &P){
+    next(Prec) = next(P);
+    prev(next(P)) = Prec;
+    next(P) = NULL;
+    prev(P) = NULL;
+}
+
+void deleteReview(List_relasi &L, address_relasi P) {
+    if (P == first(L)) {
+            deleteFirstR(L, P);
+        } else if (P == prev(first(L))) {
+            deleteLastR(L, P);
+        } else {
+            address_relasi curr = first(L);
+            while (next(curr) != P) {
+                curr = next(curr);
+            }
+
+            deleteAfterR(curr, P);
+    }
+    dealokasiR(P);
 }
 
 address_relasi alokasiR( address_parent P, address_child C, infotype_child X){
 
     address_relasi Q = new elmlist_relasi;
-    child(Q) = C;
+    Q -> child = C;
     parent(Q) = P;
     info(Q) = X;
     next(Q) = NULL;
@@ -54,12 +91,51 @@ address_relasi alokasiR( address_parent P, address_child C, infotype_child X){
 void dealokasiR(address_relasi &P){
 
 }
-address_relasi findElmR(List_relasi L, address_parent P, address_child C){
-    return 0;
+address_relasi findElmR(List_relasi L, address_parent P, address_child C){ //by parent & child
+    address_relasi curr = first(L);
+    if (first(L) == NULL) {
+        return NULL;
+    } else {
+        if ((parent(curr) == P) && (child(curr) == C)) {
+            return curr;
+        }
+
+        curr = next(curr);
+        while ((curr != first(L)) && (parent(curr) != P || child(curr) != C)) {
+            curr = next(curr);
+        }
+        if (curr != first(L)) {
+            return curr;
+        } else {
+            return NULL;
+        }
+    }
 }
+
+address_relasi findElmR2(List_relasi L, infotype_child X){ //by content/info/review
+    address_relasi curr = first(L);
+    if (first(L) == NULL) {
+        return NULL;
+    } else {
+        if (info(curr) == X) {
+            return curr;
+        }
+
+        curr = next(curr);
+        while ((curr != first(L)) && (info(curr) != X)) {
+            curr = next(curr);
+        }
+        if (curr != first(L)) {
+            return curr;
+        } else {
+            return NULL;
+        }
+    }
+}
+
 void printInfoR(List_relasi L){
     if (first(L) == NULL) {
-        cout<<"List Kosong"<<endl;
+        cout<<"Review list is still empty."<<endl;
         } else {
             cout<<endl;
             cout<< "Review List: "<<endl<<endl;
