@@ -35,7 +35,7 @@
 	"Child.h"
 	"controller.h"
 
-1585587248 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.h
+1585629534 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.h
 	<iostream>
 
 1585587548 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.h
@@ -46,14 +46,14 @@
 1585589485 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\child.h
 	<iostream>
 
-1585626092 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\main.cpp
+1585629211 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\main.cpp
 	"iostream"
 	"Parents.h"
 	"Relasi.h"
 	"Child.h"
 	"controller.h"
 
-1585623009 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.cpp
+1585629758 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.cpp
 	"Parents.h"
 	"Relasi.h"
 	"Child.h"
@@ -65,10 +65,10 @@
 	"Child.h"
 	"controller.h"
 
-1585626170 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.h
+1585629124 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.h
 	<iostream>
 
-1585626149 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.cpp
+1585629198 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.cpp
 	"Parents.h"
 	"Relasi.h"
 	"Child.h"

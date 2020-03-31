@@ -82,15 +82,15 @@ void dealokasiP(address_parent &P){
 }
 
 address_parent findElmP(List_parent L, infotype_parent x){
-
-    address_parent P = first(L);
-    do {
-        if(info(P) == x) {
-            return P;
-        }
-        P = next(P);
-    } while(P != first(L));
-    return NULL;
+    address_parent curr = first(L);
+    while (curr != NULL && info(curr) != x) {
+        curr = next(curr);
+    }
+    if (curr != NULL) {
+        return curr;
+    } else {
+        return NULL;
+    }
 
 }
 void printInfoP(List_parent L){
@@ -104,3 +104,4 @@ void printInfoP(List_parent L){
     }
 
 }
+

@@ -7,7 +7,7 @@ using namespace std;
 void menu();
 void menu_admin();
 void menu_reviewer();
-void admin();
+void admin(List_parent LP, List_child LC, List_relasi LR);
 void reviewer();
 
 #endif // CONTROLLER_H_INCLUDED

@@ -50,7 +50,7 @@ int main()
                 cin>>pass;
                 if ((id == "admin") && (pass == "admin")) {
                     cout<<endl<<"Anda berhasil login sebagai admin.";
-                    admin();
+                    admin(LP,LC,LR);
                 } else {
                     cout << "Username atau password salah.";
                 }
