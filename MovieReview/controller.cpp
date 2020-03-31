@@ -186,7 +186,24 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
         } else if (pilmenu == 4) { //shownotreviewed
 
         } else if (pilmenu == 5) { //updatereview
+            cout<<endl<<"Review's film title you want to update: ";
+            cin>>input;
+            address_parent P = findElmP(LP, input);
 
+            if (P == NULL) {
+                cout<<"Sorry, film doesn't exist."<<endl;
+            } else {
+                address_relasi R = findElmR(LR, P, C);
+                if (R == NULL) {
+                    cout<<"Sorry, you don't have any review for this film."<<endl;
+                } else {
+                    string review;
+                    cout<<endl<<"Input your new review: ";
+                    cin>>review;
+                    info(R) = review;
+                    cout<<"Review updated."<<endl;
+                }
+            }
         }  else {
             cout<<"Tidak ada pilihan dalam menu."<<endl;
         }
