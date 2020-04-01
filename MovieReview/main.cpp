@@ -54,9 +54,10 @@ int main()
                 string id, pass;
                 cout<<endl;
                 cout<<"Username: ";
-                cin>>id;
+                cin.get();
+                getline(cin, id);
                 cout<<"Password: ";
-                cin>>pass;
+                getline(cin, pass);
                 if ((id == "admin") && (pass == "admin")) {
                     cout<<endl<<"You have logged in as admin.";
                     admin(LP,LC,LR);
@@ -67,7 +68,8 @@ int main()
                 string id;
                 cout<<endl;
                 cout<<"Reviewer Name: ";
-                cin>>id;
+                cin.get();
+                getline(cin, id);
                 C = findElmC(LC, id);
                 if (C == NULL) {
                     cout<<"You name isn't registered. Please sign up first."<<endl;
@@ -86,7 +88,8 @@ int main()
 
             string input;
             cout<<endl<<"Insert your name: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             if (findElmC(LC, input) != NULL) {
                 cout<<"Sorry, your account already exist."<<endl;
             } else {

@@ -57,7 +57,8 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
         if (pilmenu == 1) { //insertfilm
 
             cout<<endl<<"Film Title to input: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             if (findElmP(LP, input) != NULL) {
                 cout<<"Sorry, Film already exist."<<endl;
             } else {
@@ -72,13 +73,15 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
 
         } else if (pilmenu == 3) { //updatefilm
             cout<<endl<<"Film to update: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_parent P = findElmP(LP, input);
             if (P == NULL) {
                 cout<<"Sorry, film doesn't exist."<<endl;
             } else {
                 cout<<"Update the title: ";
-                cin>>input;
+                cin.get();
+                getline(cin, input);
                 if (findElmP(LP, input) != NULL) {
                 cout<<"Sorry, Film already exist."<<endl;
                 } else {
@@ -88,7 +91,8 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
 
         } else if (pilmenu == 4) { //deletefilm
             cout<<endl<<"Film to delete: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_parent P = findElmP(LP, input);
             if (P == NULL) {
                 cout<<"Sorry, film doesn't exist."<<endl;
@@ -101,7 +105,8 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             printInfoC(LC);
         } else if (pilmenu == 6) { //deletereviewer
             cout<<endl<<"Reviewer to delete: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_child P = findElmC(LC, input);
             if (P == NULL) {
                 cout<<"Sorry, reviewer doesn't exist."<<endl;
@@ -111,12 +116,14 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             }
         } else if (pilmenu == 7) { //view all review of specific film
             cout<<endl<<"Film Title: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_parent P = findElmP(LP, input);
             printByParent(LR, P);
         } else if (pilmenu == 8) { //view all review of specific reviewer
             cout<<endl<<"Reviewer Name: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_child C = findElmC(LC, input);
             printByChild(LR, C);
         } else {
@@ -147,7 +154,8 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
     while (pilmenu != 6) {
         if (pilmenu == 1) { //addreview
             cout<<endl<<"Film Title to input the review: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_parent P = findElmP(LP, input);
 
             if (P != NULL){
@@ -157,7 +165,7 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
                 } else {
                     string review;
                     cout<<endl<<"Input your review: ";
-                    cin>>review;
+                    getline(cin, review);
 
                     address_relasi R = alokasiR(P, C, review);
 
@@ -171,7 +179,8 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
         } else if (pilmenu == 2) { //deletereview
 
             cout<<endl<<"Review's film title to delete: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_parent P = findElmP(LP, input);
 
             if (P == NULL) {
@@ -193,7 +202,8 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
             showNotReviewed(LP, LR, C);
         } else if (pilmenu == 5) { //updatereview
             cout<<endl<<"Review's film title you want to update: ";
-            cin>>input;
+            cin.get();
+            getline(cin, input);
             address_parent P = findElmP(LP, input);
 
             if (P == NULL) {
@@ -205,7 +215,8 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
                 } else {
                     string review;
                     cout<<endl<<"Input your new review: ";
-                    cin>>review;
+                    cin.get();
+                    getline(cin, review);
                     info(R) = review;
                     cout<<"Review updated."<<endl;
                 }

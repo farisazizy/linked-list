@@ -1,6 +1,8 @@
 #ifndef CONTROLLER_H_INCLUDED
 #define CONTROLLER_H_INCLUDED
 #include <iostream>
+#include <algorithm>
+#include <string>
 
 using namespace std;
 
