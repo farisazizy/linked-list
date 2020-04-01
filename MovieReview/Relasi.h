@@ -47,5 +47,6 @@ address_relasi findElmR(List_relasi L, address_parent P, address_child C);
 void printInfoR(List_relasi L);
 void printByChild (List_relasi L, address_child P);
 void printByParent (List_relasi L, address_parent P);
+void showNotReviewed(List_parent LP, List_relasi LR, address_child C);
 
 #endif // RELASI_H_INCLUDED

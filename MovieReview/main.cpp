@@ -22,12 +22,13 @@ int main()
     createListR(LR);
 
     //test purpose only
-    infotype_child c = "Aditya";
+    infotype_child c = "admin";
     alokasiC(C, c);
     insertAscendingC(LC, C);
-    c = "Faris";
-    alokasiC(C, c);
-    insertAscendingC(LC, C);
+
+    infotype_parent p = "conan";
+    alokasiP(P, p);
+    insertLastP(LP, P);
 
     int pilmenu = 0;
     string ans;

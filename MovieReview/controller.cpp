@@ -113,12 +113,12 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             cout<<endl<<"Film Title: ";
             cin>>input;
             address_parent P = findElmP(LP, input);
-            printByParent(LR, P); 
+            printByParent(LR, P);
         } else if (pilmenu == 8) { //view all review of specific reviewer
             cout<<endl<<"Reviewer Name: ";
             cin>>input;
             address_child C = findElmC(LC, input);
-            printByChild(LR, C); 
+            printByChild(LR, C);
         } else {
             cout<<"Tidak ada pilihan dalam menu."<<endl;
         }
@@ -190,7 +190,7 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
         } else if (pilmenu == 3) { //showallofmyreview
             printByChild (LR, C);
         } else if (pilmenu == 4) { //shownotreviewed
-
+            showNotReviewed(LP, LR, C);
         } else if (pilmenu == 5) { //updatereview
             cout<<endl<<"Review's film title you want to update: ";
             cin>>input;
