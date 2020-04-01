@@ -215,25 +215,17 @@ void printByParent (List_relasi L, address_parent P) {
 void showNotReviewed(List_parent LP, List_relasi LR, address_child C) {
     address_relasi currR;
     address_parent currP = first(LP);
-    cout<<1;
+    int i = 0;
     while (currP != NULL) {
-        cout<<2;
-        currR = first(LR);
-        if (currR != NULL) {
-            cout<<3;
-            do {
-                if ((child(currR) != C) && (parent(currR) != currP)) {
-                    cout<<"Film Title: "<<info(currP)<<endl;
-                    cout<<4;
-                }
-                cout<<5;
-                currR = next(currR);
-            } while (currR != first(LR));
-            cout<<6;
-        } else {
-            printInfoP(LP);
+        if (findElmR(LR, currP, C) == NULL) {
+            cout<<i+1<<". "<<info(currP)<<endl;
+            i++;
         }
         currP = next(currP);
+    }
+
+    if (i == 0) {
+        cout<<"There's no film or you already gave reviews to all films."<<endl;
     }
 
 }
