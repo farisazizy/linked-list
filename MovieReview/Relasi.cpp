@@ -180,7 +180,7 @@ void printByChild (List_relasi L, address_child P) {
             curr = next(curr);
     }
     if (i == 0) {
-        cout<<"No reviews yet."<<endl;
+        cout<<"Reviewer doesn't exist or no reviews yet."<<endl;
     }
 }
 
