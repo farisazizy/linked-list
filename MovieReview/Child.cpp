@@ -90,6 +90,7 @@ void deleteAfterC(List_child &L, address_child Prec, address_child &P){
 
 void deleteReviewer(List_child &L, address_child P) {
 
+
     if (P == first(L)) {
         deleteFirstC(L, P);
     } else if (P == last(L)) {

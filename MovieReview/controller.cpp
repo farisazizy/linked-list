@@ -95,6 +95,11 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             if (P == NULL) {
                 cout<<"Sorry, film doesn't exist."<<endl;
             } else {
+                address_relasi Q = findElmR3(LR, P);
+                while(Q != NULL){
+                    deleteReview(LR, Q);
+                    Q = findElmR3(LR, P);
+                }
                 deleteFilm(LP, P);
                 cout<<"Delete successful."<<endl;
             }
@@ -108,6 +113,11 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             if (P == NULL) {
                 cout<<"Sorry, reviewer doesn't exist."<<endl;
             } else {
+                address_relasi Q = findElmR2(LR, P);
+                while(Q != NULL){
+                    deleteReview(LR, Q);
+                    Q = findElmR2(LR, P);
+                }
                 deleteReviewer(LC, P);
                 cout<<"Delete successful."<<endl;
             }

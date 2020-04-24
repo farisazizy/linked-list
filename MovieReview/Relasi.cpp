@@ -112,17 +112,39 @@ address_relasi findElmR(List_relasi L, address_parent P, address_child C){ //by 
     }
 }
 
-address_relasi findElmR2(List_relasi L, infotype_child X){ //by content/info/review
+address_relasi findElmR2(List_relasi L, address_child X){ //by content/info/review
     address_relasi curr = first(L);
     if (first(L) == NULL) {
         return NULL;
     } else {
-        if (info(curr) == X) {
+        if (child(curr) == X) {
             return curr;
         }
 
         curr = next(curr);
-        while ((curr != first(L)) && (info(curr) != X)) {
+        while ((curr != first(L)) && (child(curr) != X)){
+            curr = next(curr);
+        }
+        if (curr != first(L)) {
+            return curr;
+        } else {
+            return NULL;
+        }
+    }
+}
+
+
+address_relasi findElmR3(List_relasi L, address_parent X){ //by content/info/review
+    address_relasi curr = first(L);
+    if (first(L) == NULL) {
+        return NULL;
+    } else {
+        if (parent(curr) == X) {
+            return curr;
+        }
+
+        curr = next(curr);
+        while ((curr != first(L)) && (parent(curr) != X)){
             curr = next(curr);
         }
         if (curr != first(L)) {
