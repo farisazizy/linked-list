@@ -27,6 +27,10 @@ struct List_parent {
     address_parent last;
 };
 
+struct temp {
+    infotype_parent info;
+    int jumlah;
+};
 
 void createListP(List_parent &L);
 void insertFirstP(List_parent &L, address_parent P);

@@ -191,10 +191,10 @@
 	"Child.h"
 	"controller.h"
 
-1588259809 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.h
+1588276591 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.h
 	<iostream>
 
-1587674624 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.h
+1588261861 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.h
 	<iostream>
 	"Parents.h"
 	"Child.h"
@@ -207,7 +207,7 @@
 	<algorithm>
 	<string>
 
-1587674624 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\main.cpp
+1588261763 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\main.cpp
 	"iostream"
 	"Parents.h"
 	"Relasi.h"
@@ -220,7 +220,13 @@
 	"Child.h"
 	"controller.h"
 
-1588259817 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.cpp
+1588261828 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588277496 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.cpp
 	"Parents.h"
 	"Relasi.h"
 	"Child.h"

@@ -257,8 +257,46 @@ void showNotReviewed(List_parent LP, List_relasi LR, address_child C) {
 }
 
 void viewMovie(List_parent LP, List_child LC, List_relasi LR) {
+    temp tempA[100];
+    address_parent curr = first(LP);
+    int i = 0;
+    while (curr != NULL) {
+        tempA[i].info = info(curr);
+        tempA[i].jumlah = jumlah(curr);
+        curr = next(curr);
+        i++;
+    }
 
+    // sudah ada array nya, tinggal disorting si array
 
+    int j = 0;
+    int k = 0;
+    for (j = 0 ; j < 100 ; j++) {
+        temp key = tempA[j];
+        k = j - 1;
+        while (k >= 0 && tempA[k].jumlah < key.jumlah) {
+            tempA[k+1] = tempA[k];
+            k = k-1;
+        }
+        tempA[k+1] = key;
+    }
+
+    address_parent P;
+
+    for (int l = 0; l < 100; l++) {
+        if (tempA[l].info != "") {
+            P = findElmP(LP, tempA[l].info);
+            if (tempA[l].jumlah != 0 ) {
+                cout<<"Film Title : "<<tempA[l].info<<endl;
+                printByParent(LR, P);
+                cout<<endl;
+            } else {
+                cout<<tempA[l].info<<" has 0 review."<<endl;
+            }
+
+        }
+
+    }
 
 }
 
