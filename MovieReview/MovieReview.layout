@@ -2,19 +2,34 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="main.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="286" topLine="4" />
+			<Cursor1 position="2837" topLine="76" />
 		</Cursor>
 	</File>
-	<File name="Relasi.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Parents.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1357" topLine="24" />
+			<Cursor1 position="2582" topLine="97" />
 		</Cursor>
 	</File>
-	<File name="Parents.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="controller.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="850" topLine="17" />
+			<Cursor1 position="7505" topLine="91" />
+		</Cursor>
+	</File>
+	<File name="Child.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2335" topLine="85" />
+		</Cursor>
+	</File>
+	<File name="Child.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="392" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Relasi.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6791" topLine="239" />
 		</Cursor>
 	</File>
 	<File name="controller.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -22,29 +37,14 @@
 			<Cursor1 position="308" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="controller.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Parents.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="5250" topLine="149" />
+			<Cursor1 position="1129" topLine="9" />
 		</Cursor>
 	</File>
-	<File name="Child.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Relasi.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2190" topLine="85" />
-		</Cursor>
-	</File>
-	<File name="Child.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="731" topLine="18" />
-		</Cursor>
-	</File>
-	<File name="Relasi.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4409" topLine="156" />
-		</Cursor>
-	</File>
-	<File name="Parents.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1728" topLine="57" />
+			<Cursor1 position="1523" topLine="17" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

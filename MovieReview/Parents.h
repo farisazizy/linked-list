@@ -7,6 +7,7 @@ using namespace std;
 #define next(P) P->next
 #define last(L) L.last
 #define info(P) P->info
+#define jumlah(P) P->jumlah
 
 // first last
 
@@ -17,6 +18,7 @@ typedef struct elmlist_parent *address_parent;
 
 struct elmlist_parent {
     infotype_parent info;
+    int jumlah;
     address_parent next;
 };
 

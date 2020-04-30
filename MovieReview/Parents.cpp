@@ -90,6 +90,7 @@ void alokasiP(address_parent &P, infotype_parent x){
     P = new elmlist_parent;
     info(P) = x;
     next(P) = NULL;
+    jumlah(P) = 0;
 
 }
 
@@ -125,4 +126,8 @@ void printInfoP(List_parent L){
     cout<<endl;
 
 }
+
+
+
+
 

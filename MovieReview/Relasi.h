@@ -49,5 +49,6 @@ void printInfoR(List_relasi L);
 void printByChild (List_relasi L, address_child P);
 void printByParent (List_relasi L, address_parent P);
 void showNotReviewed(List_parent LP, List_relasi LR, address_child C);
+void viewMovie(List_parent LP, List_child LC, List_relasi LR);
 
 #endif // RELASI_H_INCLUDED

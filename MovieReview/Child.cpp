@@ -109,6 +109,7 @@ void alokasiC(address_child &P, infotype_child x){
 
     P = new elmlist_child;
     info(P) = x;
+    jumlah(P) = 0;
     next(P) = NULL;
 }
 

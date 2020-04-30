@@ -97,6 +97,7 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             } else {
                 address_relasi Q = findElmR3(LR, P);
                 while(Q != NULL){
+                    jumlah(child(Q))--;
                     deleteReview(LR, Q);
                     Q = findElmR3(LR, P);
                 }
@@ -115,6 +116,7 @@ void admin(List_parent &LP, List_child &LC, List_relasi &LR) {
             } else {
                 address_relasi Q = findElmR2(LR, P);
                 while(Q != NULL){
+                    jumlah(parent(Q))--;
                     deleteReview(LR, Q);
                     Q = findElmR2(LR, P);
                 }
@@ -174,6 +176,9 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
                     cout<<endl<<"Input your review: ";
                     getline(cin, review);
 
+                    jumlah(P)++;
+                    jumlah(C)++;
+
                     address_relasi R = alokasiR(P, C, review);
 
                     insertFirstR(LR, R);
@@ -197,6 +202,8 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
                     cout<<"Sorry, you don't have any review for this film."<<endl;
                 } else {
                     deleteReview(LR, R);
+                    jumlah(C)--;
+                    jumlah(P)--;
                     cout<<"Delete successful."<<endl;
                 }
 
@@ -207,7 +214,7 @@ void reviewer (List_parent &LP, List_child &LC, List_relasi &LR, address_child C
         } else if (pilmenu == 4) { //shownotreviewed
             showNotReviewed(LP, LR, C);
         } else if (pilmenu == 5) { //updatereview
-            cout<<endl<<"Review's film title you want to update: ";
+            cout<<endl<<"Reviewed film title you want to update: ";
             getline(cin, input);
             address_parent P = findElmP(LP, input);
 

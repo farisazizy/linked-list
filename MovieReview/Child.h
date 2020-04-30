@@ -9,6 +9,7 @@ using namespace std;
 #define first(L) L.first
 #define last(L) L.last
 #define info(P) P->info
+#define jumlah(P) P->jumlah
 
 
 
@@ -18,6 +19,7 @@ typedef struct elmlist_child *address_child;
 
 struct elmlist_child{
     infotype_child info;
+    int jumlah;
     address_child next;
 };
 

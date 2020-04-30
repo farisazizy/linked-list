@@ -99,9 +99,7 @@ int main()
             }
 
         } else if (pilmenu == 3) { // harus diubah, ini hanya untuk test
-            printInfoP(LP);
-            printInfoC(LC);
-            printInfoR(LR);
+            viewMovie(LP,LC,LR);
         }
 
         cout<<endl<<"Quit from the Application?(Y/N): ";

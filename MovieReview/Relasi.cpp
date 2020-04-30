@@ -180,12 +180,13 @@ void printInfoR(List_relasi L){
 
 void printByChild (List_relasi L, address_child P) {
     int i = 0;
+    int rq = 0;
     address_relasi curr = first(L);
 
     if (curr != NULL) {
         if (child(curr) == P) {
-            cout<<"Film Title: "<<info(parent(curr))<<endl;
-            cout<<"Reviewer: "<<info(child(curr))<<endl;
+            rq = jumlah(P);
+            cout<<endl<<"Film Title: "<<info(parent(curr))<<endl;
             cout<<"Review: "<<info(curr)<<endl<<endl;;
             i++;
         }
@@ -194,13 +195,14 @@ void printByChild (List_relasi L, address_child P) {
 
     while (curr != first(L)) {
             if (child(curr) == P) {
+                rq = jumlah(P);
                 cout<<"Film Title: "<<info(parent(curr))<<endl;
-                cout<<"Reviewer: "<<info(child(curr))<<endl;
                 cout<<"Review: "<<info(curr)<<endl<<endl;
                 i++;
             }
             curr = next(curr);
     }
+    cout<<"Review Quantity: "<<rq<<endl;
     if (i == 0) {
         cout<<"Reviewer doesn't exist or no reviews yet."<<endl;
     }
@@ -208,11 +210,12 @@ void printByChild (List_relasi L, address_child P) {
 
 void printByParent (List_relasi L, address_parent P) {
     int i = 0;
+    int rq = 0;
     address_relasi curr = first(L);
 
     if (curr != NULL) {
         if (parent(curr) == P) {
-            cout<<"Film Title: "<<info(parent(curr))<<endl;
+            rq = jumlah(parent(curr));
             cout<<"Reviewer: "<<info(child(curr))<<endl;
             cout<<"Review: "<<info(curr)<<endl<<endl;
             i++;
@@ -222,13 +225,14 @@ void printByParent (List_relasi L, address_parent P) {
 
     while (curr != first(L)) {
             if (parent(curr) == P) {
-                cout<<"Film Title: "<<info(parent(curr))<<endl;
+                rq = jumlah(parent(curr));
                 cout<<"Reviewer: "<<info(child(curr))<<endl;
                 cout<<"Review: "<<info(curr)<<endl<<endl;
                 i++;
             }
             curr = next(curr);
     }
+    cout<<"Review Quantity: "<<rq<<endl;
     if (i == 0) {
         cout<<"Film doesn't exist or no reviews yet."<<endl;
     }
@@ -251,6 +255,17 @@ void showNotReviewed(List_parent LP, List_relasi LR, address_child C) {
     }
 
 }
+
+void viewMovie(List_parent LP, List_child LC, List_relasi LR) {
+
+
+
+}
+
+
+
+
+
 
 
 /*
