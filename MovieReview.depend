@@ -1,0 +1,234 @@
+# depslib dependency file v1.0
+1585745050 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\main.cpp
+	"iostream"
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585677372 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\parents.h
+	<iostream>
+
+1585677372 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\relasi.h
+	<iostream>
+	"Parents.h"
+	"Child.h"
+
+1585677372 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\child.h
+	<iostream>
+
+1585677372 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\relasi.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585677372 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\child.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585677372 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\parents.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\child.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585728978 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.h
+	<iostream>
+
+1585728980 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.h
+	<iostream>
+	"Parents.h"
+	"Child.h"
+
+1585623858 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\child.h
+	<iostream>
+
+1587542846 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\main.cpp
+	"iostream"
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585728976 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585728979 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1587542846 c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.h
+	<iostream>
+	<algorithm>
+	<string>
+
+1587546337 source:c:\users\asus\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 source:c:\users\asus\desktop\moviereview\child.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 c:\users\asus\desktop\moviereview\parents.h
+	<iostream>
+
+1585681410 c:\users\asus\desktop\moviereview\relasi.h
+	<iostream>
+	"Parents.h"
+	"Child.h"
+
+1585623858 c:\users\asus\desktop\moviereview\child.h
+	<iostream>
+
+1585623858 c:\users\asus\desktop\moviereview\controller.h
+	<iostream>
+
+1585681463 source:c:\users\asus\desktop\moviereview\controller.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 source:c:\users\asus\desktop\moviereview\main.cpp
+	"iostream"
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585623858 source:c:\users\asus\desktop\moviereview\parents.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585681392 source:c:\users\asus\desktop\moviereview\relasi.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1585747661 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\controller.h
+	<iostream>
+	<algorithm>
+	<string>
+
+1585746078 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\tubes-struktur-data\moviereview\controller.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588341324 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\main.cpp
+	"iostream"
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588319004 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\parents.h
+	<iostream>
+
+1588319005 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\relasi.h
+	<iostream>
+	"Parents.h"
+	"Child.h"
+
+1588319004 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\child.h
+	<iostream>
+
+1588319005 c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\controller.h
+	<iostream>
+	<algorithm>
+	<string>
+
+1588319004 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\parents.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588319005 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\relasi.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588319004 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\child.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588341802 source:c:\users\farisazizy\onedrive\important\tugas dan materi kuliah\semester 2\struktur data\moviereview\moviereview\controller.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588261023 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\child.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588276591 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.h
+	<iostream>
+
+1588261861 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.h
+	<iostream>
+	"Parents.h"
+	"Child.h"
+
+1588261023 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\child.h
+	<iostream>
+
+1587674624 d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.h
+	<iostream>
+	<algorithm>
+	<string>
+
+1588261763 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\main.cpp
+	"iostream"
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588260976 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\controller.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588261828 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\parents.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
+1588277496 source:d:\onedrive\1. telkom university\2. semester 2\1. mata kuliah\1. struktur data\tubes\tubes-struktur-data\moviereview\relasi.cpp
+	"Parents.h"
+	"Relasi.h"
+	"Child.h"
+	"controller.h"
+
