@@ -38,6 +38,8 @@
 		<Unit filename="Parents.h" />
 		<Unit filename="Relasi.cpp" />
 		<Unit filename="Relasi.h" />
+		<Unit filename="controller.cpp" />
+		<Unit filename="controller.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

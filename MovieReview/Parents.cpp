@@ -1,4 +1,7 @@
 #include "Parents.h"
+#include "Relasi.h"
+#include "Child.h"
+#include "controller.h"
 
 void createListP(List_parent &L){
 
@@ -66,38 +69,65 @@ void deleteAfterP(List_parent &L, address_parent Prec, address_parent &P){
     }
 }
 
+void deleteFilm(List_parent &L, address_parent P) {
+
+    if (P == first(L)) {
+        deleteFirstP(L, P);
+    } else if (P == last(L)) {
+        deleteLastP(L, P);
+    } else {
+        address_parent curr = first(L);
+        while (next(curr) != P) {
+            curr = next(curr);
+        }
+        deleteAfterP(L, curr, P);
+    }
+    dealokasiP(P);
+}
+
 void alokasiP(address_parent &P, infotype_parent x){
 
     P = new elmlist_parent;
     info(P) = x;
     next(P) = NULL;
+    jumlah(P) = 0;
 
 }
 
 void dealokasiP(address_parent &P){
-
+    // isi dealokasi
 }
 
 address_parent findElmP(List_parent L, infotype_parent x){
-
-    address_parent P = first(L);
-    do {
-        if(info(P) == x) {
-            return P;
-        }
-        P = next(P);
-    } while(P != first(L));
-    return NULL;
-
-}
-void printInfoP(List_parent L){
-
-    address_parent P = first(L);
-    if(first(L)!=NULL) {
-        do {
-            cout<<info(P)<<endl;
-            P = next(P);
-        } while((P) != NULL);
+    address_parent curr = first(L);
+    while (curr != NULL && info(curr) != x) {
+        curr = next(curr);
+    }
+    if (curr != NULL) {
+        return curr;
+    } else {
+        return NULL;
     }
 
 }
+void printInfoP(List_parent L){
+    int i = 1;
+    address_parent P = first(L);
+    if(first(L)!=NULL) {
+        cout<< "Film List: "<<endl;
+        do {
+            cout<<i<<". "<<info(P)<<endl;
+            P = next(P);
+            i++;
+        } while((P) != NULL);
+    } else {
+        cout<<"Film list is still empty."<<endl;
+    }
+    cout<<endl;
+
+}
+
+
+
+
+

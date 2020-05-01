@@ -1,6 +1,7 @@
 #include "Parents.h"
 #include "Relasi.h"
 #include "Child.h"
+#include "controller.h"
 
 void createListC(List_child &L){
 
@@ -87,38 +88,64 @@ void deleteAfterC(List_child &L, address_child Prec, address_child &P){
     }
 }
 
+void deleteReviewer(List_child &L, address_child P) {
+
+
+    if (P == first(L)) {
+        deleteFirstC(L, P);
+    } else if (P == last(L)) {
+        deleteLastC(L, P);
+    } else {
+        address_child curr = first(L);
+        while (next(curr) != P) {
+            curr = next(curr);
+        }
+        deleteAfterC(L, curr, P);
+    }
+    dealokasiC(P);
+}
+
 void alokasiC(address_child &P, infotype_child x){
 
     P = new elmlist_child;
     info(P) = x;
+    jumlah(P) = 0;
     next(P) = NULL;
 }
 
 void dealokasiC(address_child &P){
-
+    //isi ya
 }
 
 
 address_child findElmC(List_child L, infotype_child x){
 
-    address_child P = first(L);
-    do {
-        if(info(P) == x) {
-            return P;
-        }
-        P = next(P);
-    } while(P != first(L));
-    return NULL;
+    address_child curr = first(L);
+    while (curr != NULL && info(curr) != x) {
+        curr = next(curr);
+    }
+    if (curr != NULL) {
+        return curr;
+    } else {
+        return NULL;
+    }
+
 }
 
 void printInfoC(List_child L){
 
     address_child P = first(L);
-    while(P != NULL) {
-        cout<<" "<<info(P);
-        P = next(P);
+    int i = 1;
+    if(first(L)!=NULL) {
+        cout<< "Reviewer List: "<<endl;
+        do {
+            cout<<i<<". "<<info(P)<<endl;
+            P = next(P);
+            i++;
+        } while((P) != NULL);
+    }else {
+        cout<<"Reviewer list is still empty."<<endl;
     }
-
     cout<<endl;
 }
 

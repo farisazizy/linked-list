@@ -9,6 +9,7 @@ using namespace std;
 #define first(L) L.first
 #define last(L) L.last
 #define info(P) P->info
+#define jumlah(P) P->jumlah
 
 
 
@@ -18,6 +19,7 @@ typedef struct elmlist_child *address_child;
 
 struct elmlist_child{
     infotype_child info;
+    int jumlah;
     address_child next;
 };
 
@@ -34,6 +36,7 @@ void insertAfterC(address_child Prec, address_child P);
 void deleteFirstC(List_child &L, address_child &P);
 void deleteLastC(List_child &L, address_child &P);
 void deleteAfterC(List_child &L, address_child Prec, address_child &P);
+void deleteReviewer(List_child &L, address_child P);
 
 void alokasiC(address_child &P, infotype_child x);
 void dealokasiC(address_child &P);
